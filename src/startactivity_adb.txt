@@ -1,0 +1,11 @@
+am start -n org.chromium.content_shell_apk/.ContentShellActivity -d http://www.google.com
+
+am start -n com.tpv.app.browserbookmark/com.tpv.app.browserbookmark.MainActivity
+
+am start -n com.tpv.app.tpvlauncher/com.tpv.app.tpvlauncher.info.InfoActivity
+
+am start -n com.tpv.app.tpvlauncher/com.tpv.app.tpvlauncher.home.MainActivity
+
+adb install D:\apk\Chrome.apk
+
+adb shell am broadcast -a com.tpv.app.tpvmenu.TPV_SHOW_QINFO_MENU_S
